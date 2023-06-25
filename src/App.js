@@ -45,7 +45,7 @@ function App() {
       <Navbar/>
         <SearchBoxN setGetSearchResult={setGetSearchResult} getSearchResult={getSearchResult} getData={getData}/>
         <Routes ref={ref2}>
-          <Route path='/' element={<MainPage/>} />
+          <Route path='/' element={<PopularMovie/>} />
           <Route path='/pagesM/popularMovie' element={<PopularMovie/>} />
           <Route path='/pagesM/nowPlayingMovie' element={<NewPlayingMovie/>}/>
           <Route path='/pagesM/TopRatingMovie' element={<TopRatingMovie/>}/>

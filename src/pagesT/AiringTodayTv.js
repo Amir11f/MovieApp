@@ -96,7 +96,7 @@ export default function AiringTodayTv() {
 
 
     const airingTodayTv = async (pageNumber)=>{
-        const get = await axios.get(`https://api.themoviedb.org/3/tv/popular?api_key=1b6ccfb407b0626e097c87368fba764e&vote_count.gte=1000&country&vote_average.gte=6&language=en-US&with_genres=${getId}&certification=${addCerReduce}&primary_release_date.gte=${formattedStringDate}&primary_release_date.lte=${formattedStringDateEnd}&certification_country=US&page=${pageNumber}`);
+        const get = await axios.get(`https://api.themoviedb.org/3/tv/airing_today?api_key=1b6ccfb407b0626e097c87368fba764e&language=en-US&with_genres=${getId}&certification=${addCerReduce}&primary_release_date.gte=${formattedStringDate}&primary_release_date.lte=${formattedStringDateEnd}&certification_country=US&page=${pageNumber}`);
         return get.data.results
     }
 
